@@ -28,7 +28,7 @@ function stena($id_us = null, $id = null)
             } else {
                 echo ' <span style="color:darkgreen;">создал' . ($ank_stena['pol']==0 ? 'a' : null) . ' новую тему в форуме</span><br/>';
                 echo ' <a href="/forum/' . $them['id_forum'] . '/' . $them['id_razdel'] . '/' . $them['id'] . '/"><b style="color:#999;">' . text($them['name']) . '</b></a><br/>';
-                echo ' <span style="color:#666;">' . rez_text($them['text'], 82) . '</span>';
+                echo ' <span style="color:#666;">' . output_text(rez_text($them['text'], 82)) . '</span>';
             }
         }
     }
